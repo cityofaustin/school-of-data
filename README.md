@@ -1,10 +1,10 @@
-![City of Austin Seal](./readme_images/coa_seal.png)
-![Pink Donut Chart Logo](./readme_images/pink-donut-logo.png)
-![School of Data Logo](./readme_images/schoolofdata-logo.png)
-
 # School of Data LA 2019
 
 Source code for Austin Transportation's [School of Data LA 2019](https://schoolofdata.la/) workshop.
+
+![Pink Donut Chart Logo](./readme_images/pink-donut-logo.png)
+![School of Data Logo](./readme_images/schoolofdata-logo.png)
+![City of Austin Seal](./readme_images/coa_seal.png)
 
 ## Outline
 
