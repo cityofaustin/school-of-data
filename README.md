@@ -4,7 +4,7 @@ Source code for Austin Transportation's School of Data 2019 workshop.
 
 ## Outline
 
-We'll be using fake data similar to our exisiting "Data Tracker" Knack application.
+We'll be using Signal Request data similar to our exisiting "Data Tracker" Knack application.
 
 ### Python Data ETL
 
@@ -23,6 +23,8 @@ We'll be using fake data similar to our exisiting "Data Tracker" Knack applicati
 - `npm install create-react-app`
 - `create-react-app school-of-data-example`
 - live code components
+  - get signal request data from Socrata API or PostgREST endpoint:
+  - https://data.austintexas.gov/Transportation-and-Mobility/Traffic-and-Pedestrian-Signal-Requests/f6qu-b7zb
 - For auto-reloading dev server: `npm start`
 - For production assets build: `npm run build`
 - deploy to gh-pages
