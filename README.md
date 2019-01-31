@@ -24,11 +24,26 @@ We'll be using Signal Request data similar to our existing "Data Tracker" Knack 
 
 ### Javascript Dataviz
 
-- `npm install create-react-app`
-- `create-react-app school-of-data-example`
-- live code components
-  - get signal request data from Socrata API or PostgREST endpoint:
-  - https://data.austintexas.gov/Transportation-and-Mobility/Traffic-and-Pedestrian-Signal-Requests/f6qu-b7zb
-- For auto-reloading dev server: `npm start`
-- For production assets build: `npm run build`
-- deploy to gh-pages
+1.  Getting Started with [Create React App](https://github.com/facebook/create-react-app)
+
+    - `npx create-react-app frontend`
+    - `cd frontend`
+    - `npm start`
+    - A development server should start up and open `http://localhost:3000/` in your default browser.
+
+2.  Get data from the server (Socrata API or PostgREST endpoint)
+
+    - `npm intall axios --save`
+    - Write a function, "getDataFromEndpoint"
+      - get signal request data from [Socrata](https://data.austintexas.gov/Transportation-and-Mobility/Traffic-and-Pedestrian-Signal-Requests/f6qu-b7zb)
+    - Call that function inside the `componentWillMount()` lifecycle method.
+    - `console.log()` the data or print it to page with `JSON.stringify(this.state.data)`
+
+3.  Put the data into a sortable/searchable table
+
+    - `npm install material-table --save` to install [Material Table](https://mbrn.github.io/material-table/#/)
+    - add `@import url("https://fonts.googleapis.com/icon?family=Material+Icons");` to App.css file for table Icons
+    - define column headers in `columns` array of objects
+    - pass columns and data into `<MaterialTable/>` component
+
+4.  deploy to gh-pages
