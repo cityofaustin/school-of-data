@@ -52,6 +52,21 @@ class App extends Component {
       height: "100vh"
     };
 
+    const circleMarkerStyle = {
+      PHB: {
+        color: "#fff",
+        weight: 1,
+        fillColor: "#a65628",
+        fillOpacity: 0.8
+      },
+      TRAFFIC: {
+        color: "#fff",
+        weight: 1,
+        fillColor: "#237FB4",
+        fillOpacity: 0.8
+      }
+    };
+
     return (
       <div className="App">
         {this.state.isDataLoaded && (
@@ -77,6 +92,12 @@ class App extends Component {
                       center={[item.location_latitude, item.location_longitude]}
                       radius={500}
                       key={`${i}_marker`}
+                      fillColor={circleMarkerStyle[item.eval_type].fillColor}
+                      color={circleMarkerStyle[item.eval_type].color}
+                      weight={circleMarkerStyle[item.eval_type].weight}
+                      fillOpacity={
+                        circleMarkerStyle[item.eval_type].fillOpacity
+                      }
                     >
                       <Popup>
                         <h3>{`${item.eval_type} REQUEST`}</h3>
