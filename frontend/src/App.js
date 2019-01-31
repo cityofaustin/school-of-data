@@ -1,7 +1,7 @@
 import React, { Component } from "react";
 import axios from "axios";
 import MaterialTable from "material-table";
-import { Map, TileLayer, Marker, Popup } from "react-leaflet";
+import { Map, TileLayer, Circle, Popup } from "react-leaflet";
 import { overrideLeafletIcons } from "./leafletOverrides";
 import "./App.css";
 
@@ -71,13 +71,21 @@ class App extends Component {
                   ext="png"
                   subdomains="abcd"
                 />
-                <Marker position={position}>
-                  <Popup>
-                    A pretty CSS3 popup.
-                    <br />
-                    Easily customizable.
-                  </Popup>
-                </Marker>
+                {this.state.data.map((item, i) => {
+                  return (
+                    <Circle
+                      center={[item.location_latitude, item.location_longitude]}
+                      radius={500}
+                      key={`${i}_marker`}
+                    >
+                      <Popup>
+                        <h3>{`${item.eval_type} REQUEST`}</h3>
+                        <p>{`${item.location_name}`}</p>
+                        <p>{`Status ${item.request_status}`}</p>
+                      </Popup>
+                    </Circle>
+                  );
+                })}
               </Map>
             </div>
           </div>
