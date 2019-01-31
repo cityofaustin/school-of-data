@@ -29,9 +29,8 @@ class App extends Component {
   }
 
   componentWillMount() {
-    const socrataApiEndpoint =
-      "https://data.austintexas.gov/resource/yfa7-33gh.json";
-    this.getDataFromEndpoint(socrataApiEndpoint);
+    const endpoint = "http://schoolofdata.austintexas.io/signal_requests";
+    this.getDataFromEndpoint(endpoint);
   }
 
   render() {
