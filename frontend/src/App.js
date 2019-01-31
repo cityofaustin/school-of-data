@@ -29,8 +29,9 @@ class App extends Component {
   }
 
   componentWillMount() {
-    const endpoint = "http://schoolofdata.austintexas.io/signal_requests";
-    this.getDataFromEndpoint(endpoint);
+    this.getDataFromEndpoint(
+      "http://schoolofdata.austintexas.io/signal_requests"
+    );
   }
 
   render() {
