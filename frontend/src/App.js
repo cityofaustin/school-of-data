@@ -1,12 +1,15 @@
 import React, { Component } from "react";
 import axios from "axios";
+import MaterialTable from "material-table";
+
 import "./App.css";
 
 class App extends Component {
   constructor(props) {
     super(props);
     this.state = {
-      data: ""
+      data: {},
+      isDataLoaded: false
     };
   }
 
@@ -16,7 +19,8 @@ class App extends Component {
       .then(res => {
         console.log(res);
         this.setState({
-          data: res.data
+          data: res.data,
+          isDataLoaded: true
         });
       })
       .catch(error => {
@@ -31,9 +35,21 @@ class App extends Component {
   }
 
   render() {
+    const columns = [
+      { title: "Location Name", field: "location_name" },
+      { title: "Type", field: "eval_type" },
+      { title: "Request Status", field: "request_status" }
+    ];
+
     return (
       <div className="App">
-        <code>{JSON.stringify(this.state.data)}</code>
+        {this.state.isDataLoaded && (
+          <MaterialTable
+            title="Signal Requests"
+            columns={columns}
+            data={this.state.data}
+          />
+        )}
       </div>
     );
   }
