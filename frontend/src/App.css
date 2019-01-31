@@ -1,2 +1,8 @@
 /* Add Material Icons for table icons */
 @import url("https://fonts.googleapis.com/icon?family=Material+Icons");
+
+/* Add bootstrap v4 for styling, layouts, CSS utilites, etc */
+@import url("../node_modules/bootstrap/dist/css/bootstrap.min.css");
+
+/* Add base leaflet css */
+@import url("../node_modules/leaflet/dist/leaflet.css");

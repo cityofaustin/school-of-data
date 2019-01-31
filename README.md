@@ -46,4 +46,11 @@ We'll be using Signal Request data similar to our existing "Data Tracker" Knack 
     - define column headers in `columns` array of objects
     - pass columns and data into `<MaterialTable/>` component
 
-4.  deploy to gh-pages
+4.  Add a map
+
+    - `npm install react-leaflet leaflet bootstrap --save` to install React-Leaflet, Leaflet & Bootstrap
+    - use Bootstrap grid to put Table and Map sections side by side
+    - add Map component with Markers
+    - add Leaflet L.Icon.Default overrides
+
+5.  deploy to gh-pages
