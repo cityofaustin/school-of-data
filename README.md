@@ -6,6 +6,11 @@ Source code for Austin Transportation's [School of Data LA 2019](https://schoolo
 ![School of Data Logo](./readme_images/schoolofdata-logo.png)
 ![City of Austin Seal](./readme_images/coa_seal.png)
 
+
+## Slides
+
+Here's the link to our [Google Slides](https://docs.google.com/presentation/d/e/2PACX-1vSCDBN_unOSoqTEyENDAU7dN7TD0cZdWe4N8XoLsLw3uibyl-JkSK1YfCAuqmiU91EYwZwqxS2ahPBp/pub?start=false&loop=false&delayms=3000&slide=id.p) for this workshop.
+
 ## Outline
 
 We'll be using data from our Traffic Signal Request program.
