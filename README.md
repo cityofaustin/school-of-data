@@ -8,13 +8,13 @@ Source code for Austin Transportation's [School of Data LA 2019](https://schoolo
 
 ## Outline
 
-We'll be using Signal Request data similar to our existing "Data Tracker" Knack application.
+We'll be using data from our Traffic Signal Request program.
 
 ### Part 1: Backend — Python ETL
 
-1. [Click here to load the notebaook](https://mybinder.org/v2/gh/cityofaustin/school-of-data/master) This will take a few minutes.
+1. [Click here to load the notebook](https://mybinder.org/v2/gh/cityofaustin/school-of-data/master) This will take a few minutes.
 
-2. Click on the link for `School of Data 2019.ipynb`
+2. Once the notebook dashboard loads, click on the link for `School of Data 2019.ipynb`
 
 ![Notebook Link](https://github.com/cityofaustin/school-of-data/blob/johns-readme/img/ipynb.png?raw=true)
 
