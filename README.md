@@ -22,15 +22,24 @@ We'll be using data from our Traffic Signal Request program.
 
 ### Part 2: Frontend — Javascript Dataviz
 
-1.  Getting Started with [Create React App](https://github.com/facebook/create-react-app)
+```
+cd frontend
 
+# to see a list of all our steps along the way:
+git tag
+````
+
+1.  Getting Started with [Create React App](https://github.com/facebook/create-react-app)
+    
+    - `git checkout step1`
     - `npx create-react-app frontend`
     - `cd frontend`
     - `npm start`
     - A development server should start up and open `http://localhost:3000/` in your default browser.
 
 2.  Get data from the server (Socrata API or PostgREST endpoint)
-
+    
+    - `git checkout step2`
     - `npm intall axios --save`
     - Write a function, "getDataFromEndpoint"
       - get signal request data from [Socrata](https://data.austintexas.gov/Transportation-and-Mobility/Traffic-and-Pedestrian-Signal-Requests/f6qu-b7zb)
@@ -38,17 +47,28 @@ We'll be using data from our Traffic Signal Request program.
     - `console.log()` the data or print it to page with `JSON.stringify(this.state.data)`
 
 3.  Put the data into a sortable/searchable table
-
+    
+    - `git checkout step3`
     - `npm install material-table --save` to install [Material Table](https://mbrn.github.io/material-table/#/)
     - add `@import url("https://fonts.googleapis.com/icon?family=Material+Icons");` to App.css file for table Icons
     - define column headers in `columns` array of objects
     - pass columns and data into `<MaterialTable/>` component
 
 4.  Add a map
-
+    
+    - `git checkout step4.1`
     - `npm install react-leaflet leaflet bootstrap --save` to install React-Leaflet, Leaflet & Bootstrap
     - use Bootstrap grid to put Table and Map sections side by side
+    - `git checkout step4.2`
     - add Map component with Markers
     - add Leaflet L.Icon.Default overrides
+    - `git checkout step4.3`
+    - add some styling to map markers
 
 5.  deploy to gh-pages
+
+    - `git checkout step5`
+    - `npm install gh-pages --save-dev`
+    - update `package.json`
+    - To create a static build: `npm run predeploy`
+    - To publich a static build: `npm run deploy`
