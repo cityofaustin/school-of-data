@@ -33,7 +33,7 @@ class App extends Component {
 
   componentWillMount() {
     this.getDataFromEndpoint(
-      "http://schoolofdata.austintexas.io/signal_requests"
+      "https://data.austintexas.gov/resource/yfa7-33gh.json"
     );
   }
 
