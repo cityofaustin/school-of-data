@@ -10,19 +10,13 @@ Source code for Austin Transportation's [School of Data LA 2019](https://schoolo
 
 We'll be using Signal Request data similar to our existing "Data Tracker" Knack application.
 
-### Python Data ETL
+### Part 1: Backend — Python ETL
 
-- Python Client
-  - download repo
-  - `pip install -requirments`
-- Extract/Download via Knack API
-- Transform \*optional
-  - filter or GIS join?
-- Load data
-  - PostgREST Sandbox
-  - www.endpoint.internet
+[Click here to load the notebaook](https://mybinder.org/v2/gh/cityofaustin/school-of-data/master) This will take a few minutes.
 
-### Javascript Dataviz
+
+
+### Part 2: Frontend — Javascript Dataviz
 
 1.  Getting Started with [Create React App](https://github.com/facebook/create-react-app)
 
